@@ -1,0 +1,8 @@
+{
+  "name": "ionicpizza",
+  "app_id": "fbbd77ef",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

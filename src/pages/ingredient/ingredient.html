@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ingredient-gestion</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  	<ion-list inset>
+  		<div ion-item *ngFor="let ingredient of ingredient">
+    		{{ ingredient.name }}
+    		<span name="trash" class="trash" (click)="delete(ingredient._id)">Delete</span>
+    		<span name="create" class="create" (click)="update(ingredient)">Update</span>
+  		</div>
+	</ion-list>
+	<ion-fab right bottom>
+    	<button ion-fab color="red" (click)="add()">
+    		<ion-icon name="add"></ion-icon>
+    	</button>
+  </ion-fab>
